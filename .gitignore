@@ -1,0 +1,54 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.production.local
+
+# Dependencies
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Next.js
+.next/
+out/
+.turbo/
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Vercel
+.vercel/
+
+# Docker
+.dockerignore
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Development
+.turbopack-build/
+frontend/.next/
+backend/.venv/

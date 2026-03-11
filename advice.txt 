@@ -1,0 +1,55 @@
+Final Project Suggestion (Huge Resume Booster)
+
+If you build one more project, build this:
+
+AI BI Data Analyst
+
+An AI system that lets users query analytics dashboards using natural language.
+
+Example:
+
+User asks:
+
+“Which transportation mode has the highest delay rate?”
+
+The AI:
+
+converts question → SQL
+
+queries dataset
+
+explains results
+
+shows visualization
+
+Technologies:
+
+Python
+
+FastAPI
+
+LangChain
+
+PostgreSQL
+
+Streamlit
+
+This type of system is becoming common in companies using data analytics platforms like Databricks.
+
+2.
+
+One Additional Project That Would Make You EXTREMELY Strong
+
+If you build one more project, build this:
+
+AI BI Analyst
+
+An LLM that answers questions about datasets.
+
+Example queries:
+
+“Which transportation mode has the worst delays?”
+
+“Which country had the most shipment delays in 2023?”
+
+This is exactly what companies are building now.

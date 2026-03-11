@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "env": {
+    "DATABASE_URL": "@database_url",
+    "OPENAI_API_KEY": "@openai_api_key"
+  },
+  "builds": [
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/next"
+    },
+    {
+      "src": "backend/app/main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "backend/app/main.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "frontend"
+    }
+  ],
+  "functions": {
+    "backend/app/main.py": {
+      "maxDuration": 30,
+      "memory": 1024
+    }
+  }
+}
