@@ -55,3 +55,4 @@ SESSION_SUMMARY.md
 
 # Docker (local only)
 docker-compose.yml
+docs/
