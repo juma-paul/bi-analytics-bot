@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: bi-analytics-bot-api
+    runtime: python
+    buildCommand: "cd backend && pip install -q uv && uv sync"
+    startCommand: "cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: NEON_DATABASE_URL
+        scope: all
+      - key: OPENAI_API_KEY
+        scope: all
